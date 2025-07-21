@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "kitter": "^0.0.7",
+    "kitter": "^0.0.11",
     "next": "15.4.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
