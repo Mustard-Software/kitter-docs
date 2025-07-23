@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import { KitterProvider } from 'kitter';
-import { kitter } from "../../kitter.config"
+import { KitterProvider } from "kitter";
+import { kitter } from "../../kitter.config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <KitterProvider config={kitter}>
-            {children}
-          </KitterProvider>
+        <KitterProvider config={kitter}>{children}</KitterProvider>
       </body>
     </html>
   );
