@@ -28,7 +28,7 @@ export const kitter: KitterConfig = {
       },
       documentContents: {
         className:
-          "font-mono underline decoration-dotted grid grid-cols-4 gap-8 mt-8",
+          "font-mono underline decoration-dotted flex flex-row gap-8 mt-8",
       },
     },
     color: {
