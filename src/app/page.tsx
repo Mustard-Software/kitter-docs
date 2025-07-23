@@ -1,11 +1,16 @@
-import { Documentation, Page } from 'kitter'
+"use client"
+
+import { Documentation, Page, ColorSwatch, ColorGroup, PageTitle, ScrollToTop } from 'kitter'
 
 export default function Home() {
   return (
       <Documentation>
+          <ScrollToTop/>
         <Page center={true} id="toc">
-          <h1>Test</h1>
-          <div className="w-64 h-64 bg-pink-500" />
+            <PageTitle title="Create Next App" className="text-xl" />
+          <ColorGroup title="test">
+              <ColorSwatch label="--text-blue-500" color="text-blue-500" />
+          </ColorGroup>
         </Page>
       </Documentation>
   );
